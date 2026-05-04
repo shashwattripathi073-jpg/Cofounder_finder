@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 // Use environment variable when provided (set in Next.js as NEXT_PUBLIC_API_URL),
-// otherwise fall back to the backend port used by the project (5500).
-const baseURL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5500/api';
+// otherwise fall back to the backend port used by the project (5000).
+const baseURL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
 
 const api = axios.create({ baseURL });
 
